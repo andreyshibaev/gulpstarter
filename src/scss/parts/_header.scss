@@ -1,0 +1,56 @@
+header{
+    background: $bgheader;
+    background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+    padding: 30px 50px;
+    color: #f0f8ff;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    @include breakpoint($desktopbp){
+        grid-template-columns: 1fr 1fr; 
+    }
+}
+
+.logo{
+   justify-self:start;
+   display: flex;
+   flex-wrap: wrap;
+   @include breakpoint($largebp){
+    flex-direction: column;
+ }
+   h1{
+   color: #fff;
+   padding-left: 20px;
+   @include breakpoint($largebp){
+    padding-left: 0;
+ }
+   }
+   img{
+    border: 1px solid #f0ec0a;
+    @include breakpoint($largebp){
+        margin-bottom: 20px;
+    }
+   }
+}
+
+.somecontent{
+   justify-self: center;
+     a{
+        color: #f0ec0a;
+        text-decoration: none;
+        font-size: 1.115rem;
+   }
+   @include breakpoint($phonebp){
+    grid-column: 1 / 3;
+    justify-self: start;
+   }
+}
+.contacts{
+    justify-self: end;
+    @extend .somecontent;
+    @include breakpoint($desktopbp){
+        justify-self: start;
+    }
+}
+
+
