@@ -1,0 +1,13 @@
+@import "parts/vars";
+@import "parts/mixins";
+@import "parts/header";
+@import "parts/section_blocks";
+@import "parts/footer";
+
+body{
+    background: $bodyfon;
+    h1{
+        color: #2c2c2c;
+    }
+}
+ 

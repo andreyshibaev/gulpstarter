@@ -1,0 +1,29 @@
+.section_blocks_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  margin: 60px;
+  padding: 70px 0;
+  @include breakpoint($largebp) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  @include breakpoint($desktopbp) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @include breakpoint($tabletbp) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @include breakpoint($phonebp) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.item_section_block {
+  border: 1px solid #130101;
+  box-shadow: 5px 5px 10px 1px #130101;
+
+  img {
+    width: 100%;
+    object-fit: contain;
+  }
+}
