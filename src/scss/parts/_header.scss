@@ -1,54 +1,60 @@
-header{
-    background: $bgheader;
-    padding: $page_container;
-    color: #f0f8ff;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-    @include breakpoint($desktopbp){
-        grid-template-columns: 1fr 1fr; 
-    }
+header {
+  background: $bgheader;
+  background: linear-gradient($bgheader, #214a94);
+  padding: $page_container;
+  color: #f0f8ff;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  @include breakpoint($desktopbp) {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
-.logo{
-   justify-self:start;
-   display: flex;
-   flex-wrap: wrap;
-   @include breakpoint($largebp){
+.logo {
+  justify-self: start;
+  display: flex;
+  flex-wrap: wrap;
+  @include breakpoint($largebp) {
     flex-direction: column;
- }
-   h1{
-   color: #fff;
-   padding-left: 20px;
-   @include breakpoint($largebp){
-    padding-left: 0;
- }
-   }
-   img{
-    @include breakpoint($largebp){
-        margin-bottom: 20px;
+  }
+
+  h1 {
+    color: #fff;
+    padding-left: 20px;
+    @include breakpoint($largebp) {
+      padding-left: 0;
     }
-   }
+  }
+
+  img {
+    @include breakpoint($largebp) {
+      margin-bottom: 20px;
+    }
+  }
 }
 
-.somecontent{
-   justify-self: center;
-     a{
-        color: #edd40c;
-        text-decoration: none;
-        font-size: 1.115rem;
-   }
-   @include breakpoint($phonebp){
+.somecontent {
+  justify-self: center;
+
+  a {
+    color: #edd40c;
+    text-decoration: none;
+    font-size: 1.115rem;
+  }
+
+  @include breakpoint($phonebp) {
     grid-column: 1 / 3;
     justify-self: start;
-   }
+  }
 }
-.contacts{
-    justify-self: end;
-    @extend .somecontent;
-    @include breakpoint($desktopbp){
-        justify-self: start;
-    }
+
+.contacts {
+  justify-self: end;
+  @extend .somecontent;
+  @include breakpoint($desktopbp) {
+    justify-self: start;
+  }
 }
 
 

@@ -1,14 +1,19 @@
+#homepage_section {
+  padding: $page_container;
+}
+
 .section_blocks_container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 20px;
-  margin: 60px;
-  padding: 70px 0;
+  grid-gap: 20px;
+  @include breakpoint($xxlbp) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
   @include breakpoint($largebp) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
   @include breakpoint($desktopbp) {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   @include breakpoint($tabletbp) {
     grid-template-columns: 1fr 1fr;
@@ -19,11 +24,19 @@
 }
 
 .item_section_block {
-  border: 1px solid #130101;
   box-shadow: 5px 5px 10px 1px #130101;
+
+  &:nth-child(even) {
+    border: 3px solid #e00a0a;
+  }
+
+  &:nth-child(odd) {
+    border: 3px solid #071e48;
+  }
 
   img {
     width: 100%;
-    object-fit: contain;
+    height: 100%;
+    object-fit: cover;
   }
 }
