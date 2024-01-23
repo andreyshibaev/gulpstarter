@@ -1,6 +1,6 @@
 {
   "name": "gulpstarter",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Gulp starter",
   "main": "index.html",
   "scripts": {
@@ -9,7 +9,7 @@
   "author": "Andrey Shibaev",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.29.3",
+    "browser-sync": "^3.0.2",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-file-include": "^2.3.0",
@@ -17,6 +17,6 @@
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-terser": "^2.1.0",
-    "sass": "^1.62.1"
+    "sass": "^1.70.0"
   }
 }
