@@ -1,13 +1,18 @@
+@import "parts/normalize";
 @import "parts/vars";
 @import "parts/mixins";
+@import "parts/fonts";
+
+body {
+  background: $bodyfon;
+
+  h1 {
+    color: #2c2c2c;
+  }
+
+  font-family: 'Philosopher', sans-serif;
+}
+
 @import "parts/header";
 @import "parts/section_blocks";
 @import "parts/footer";
-
-body{
-    background: $bodyfon;
-    h1{
-        color: #2c2c2c;
-    }
-}
- 
