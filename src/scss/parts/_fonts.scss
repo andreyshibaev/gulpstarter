@@ -1,17 +1,15 @@
 @font-face {
-    font-family: 'Philosopher', sans-serif;
-    src: url('../../../src/fonts/Philosopher-Regular.ttf') format('ttf');
-    font-display: swap;
-    font-style: normal;
-    font-weight: 400;
-  }
-
-
-@font-face {
-  font-family: 'Philosopher', sans-serif;
-  src: url('../../../src/fonts/Philosopher-Bold.ttf') format('ttf');
-  font-display: swap;
-  font-style: normal;
+  font-family: "Tektur";
+  src: url("../../fonts/Tektur-Bold.woff2") format("woff2");
   font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
+@font-face {
+  font-family: "Tektur";
+  src: url("../../fonts/Tektur-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

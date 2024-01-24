@@ -1,5 +1,6 @@
-footer{
-    background: $bgfooter;
-    padding: $page_container;
-    color: #fff;
+footer {
+  background: $bgfooter;
+  background: linear-gradient($bgheader, #214a94);
+  padding: $page_container;
+  color: #fff;
 }
