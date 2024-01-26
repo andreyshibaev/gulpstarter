@@ -3,8 +3,13 @@
 @import "parts/mixins";
 @import "parts/fonts";
 
+:root {
+  --bg_body: #fee6ce;
+}
+
 body {
-  background: $bodyfon;
+
+  background: var(--bg_body);
 
   h1 {
     color: #2c2c2c;
